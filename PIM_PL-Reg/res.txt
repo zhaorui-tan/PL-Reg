@@ -1,0 +1,285 @@
+==========================================================
+old 用了H(Z|X) tuned weight decay
+
+(ssl_py39) phd21_zhaorui_tan@amax:/Data_PHD/phd22_zhaorui_tan/DG_extended/pim-generalized-category-discovery-main/pim-generalized-category-discovery-main$ bash train.sh
+Dataset: cub
+Loading feature map dataset...
+Loaded.
+
+K strategy: ground_truth_K
+Assumed K: 200
+
+PIM init prototypes already generated
+
+lambda already estimated
+Obtained lambda: 0.1
+
+using r=1.0
+using weight decay 0.01
+PIM training...
+no_seen_N 100
+-5.499502658843994
+Classes:                      (All) & (Old) & (New)
+PIM ACC (v1):                  66.1      77.9    60.2
+PIM ACC (ORCA metric):         64.6      77.6    60.2
+PIM ACC (Official GCD metric): 64.6      75.5    59.2
+1.0
+Dataset: scars
+Loading feature map dataset...
+Loaded.
+
+K strategy: ground_truth_K
+Assumed K: 196
+
+PIM init prototypes already generated
+
+lambda already estimated
+Obtained lambda: 0.2
+
+using r=1.0
+using weight decay 0.01
+PIM training...
+no_seen_N 98
+-5.006494522094727
+Classes:                      (All) & (Old) & (New)
+PIM ACC (v1):                  47.3      70.3    36.2
+PIM ACC (ORCA metric):         45.3      70.3    36.2
+PIM ACC (Official GCD metric): 45.3      67.4    34.6
+0.999
+Dataset: herbarium
+Loading feature map dataset...
+Loaded.
+
+K strategy: ground_truth_K
+Assumed K: 683
+
+PIM init prototypes already generated
+
+lambda already estimated
+Obtained lambda: 1.0
+
+using r=1.0
+using weight decay 0.01
+PIM training...
+no_seen_N 341
+-6.378164291381836
+Classes:                      (All) & (Old) & (New)
+PIM ACC (v1):                  51.2      67.1    42.7
+PIM ACC (ORCA metric):         43.2      67.0    42.7
+PIM ACC (Official GCD metric): 43.2      56.0    36.4
+0.9644830307813733
+Dataset: cifar10
+Loading feature map dataset...
+Loaded.
+
+K strategy: ground_truth_K
+Assumed K: 10
+
+PIM init prototypes already generated
+
+lambda already estimated
+Obtained lambda: 1.0
+
+using r=1.0
+using weight decay 0.025
+PIM training...
+no_seen_N 5
+-2.437711715698242
+Classes:                      (All) & (Old) & (New)
+PIM ACC (v1):                  94.8      97.4    93.4
+PIM ACC (ORCA metric):         94.8      97.4    93.4
+PIM ACC (Official GCD metric): 94.8      97.4    93.4
+0.9996
+Dataset: cifar100
+Loading feature map dataset...
+Loaded.
+
+K strategy: ground_truth_K
+Assumed K: 100
+
+PIM init prototypes already generated
+
+lambda already estimated
+Obtained lambda: 0.1
+
+using r=1.0
+using weight decay 0.0025
+PIM training...
+no_seen_N 80
+-4.565478324890137
+Classes:                      (All) & (Old) & (New)
+PIM ACC (v1):                  81.8      84.6    76.1
+PIM ACC (ORCA metric):         81.8      84.6    76.1
+PIM ACC (Official GCD metric): 81.8      84.6    76.1
+0.99905
+Dataset: imagenet_100
+Loading feature map dataset...
+Loaded.
+
+K strategy: ground_truth_K
+Assumed K: 100
+
+PIM init prototypes already generated
+
+lambda already estimated
+Obtained lambda: 0.1
+
+using r=1.0
+using weight decay 0.0005
+PIM training...
+no_seen_N 50
+-4.58570671081543
+Classes:                      (All) & (Old) & (New)
+PIM ACC (v1):                  83.9      94.6    78.6
+PIM ACC (ORCA metric):         83.6      94.6    78.6
+PIM ACC (Official GCD metric): 83.6      93.5    78.6
+0.9994978028876333
+
+
+
+
+
+
+
+
+
+
+
+
+==========================================================
+没有H(Z|X) tuned weight decay
+
+phd21_zhaorui_tan@amax:/Data_PHD/phd22_zhaorui_tan/DG_extended/pim-generalized-category-discovery-main/pim-generalized-category-discovery-main$ conda activate ssl_py39
+(ssl_py39) phd21_zhaorui_tan@amax:/Data_PHD/phd22_zhaorui_tan/DG_extended/pim-generalized-category-discovery-main/pim-generalized-category-discovery-main$ bash train.sh
+Dataset: cub
+Loading feature map dataset...
+Loaded.
+
+K strategy: ground_truth_K
+Assumed K: 200
+
+PIM init prototypes already generated
+
+lambda already estimated
+Obtained lambda: 0.1
+
+using r=1.0
+using weight decay 0.01
+PIM training...
+no_seen_N 100
+-5.11236047744751
+Classes:                      (All) & (Old) & (New)
+PIM ACC (v1):                  67.0      77.9    61.5
+PIM ACC (ORCA metric):         65.6      77.1    61.5
+PIM ACC (Official GCD metric): 65.6      76.5    60.1
+1.0
+Dataset: scars
+Loading feature map dataset...
+Loaded.
+
+K strategy: ground_truth_K
+Assumed K: 196
+
+PIM init prototypes already generated
+
+lambda already estimated
+Obtained lambda: 0.2
+
+using r=1.0
+using weight decay 0.01
+PIM training...
+no_seen_N 98
+-4.978334903717041
+Classes:                      (All) & (Old) & (New)
+PIM ACC (v1):                  46.8      69.0    36.0
+PIM ACC (ORCA metric):         45.0      69.0    36.0
+PIM ACC (Official GCD metric): 45.0      65.2    35.2
+0.999
+Dataset: herbarium
+Loading feature map dataset...
+Loaded.
+
+K strategy: ground_truth_K
+Assumed K: 683
+
+PIM init prototypes already generated
+
+lambda already estimated
+Obtained lambda: 1.0
+
+using r=1.0
+using weight decay 0.01
+PIM training...
+no_seen_N 341
+-4.325470447540283
+Classes:                      (All) & (Old) & (New)
+PIM ACC (v1):                  50.1      66.6    41.1
+PIM ACC (ORCA metric):         42.2      66.6    41.1
+PIM ACC (Official GCD metric): 42.2      57.6    34.0
+0.9607622054346601
+Dataset: cifar10
+Loading feature map dataset...
+Loaded.
+
+K strategy: ground_truth_K
+Assumed K: 10
+
+PIM init prototypes already generated
+
+lambda already estimated
+Obtained lambda: 1.0
+
+using r=1.0
+using weight decay 0.025
+PIM training...
+no_seen_N 5
+-2.2494070529937744
+Classes:                      (All) & (Old) & (New)
+PIM ACC (v1):                  94.7      97.5    93.3
+PIM ACC (ORCA metric):         94.7      97.5    93.3
+PIM ACC (Official GCD metric): 94.7      97.5    93.3
+0.99976
+Dataset: cifar100
+Loading feature map dataset...
+Loaded.
+
+K strategy: ground_truth_K
+Assumed K: 100
+
+PIM init prototypes already generated
+
+lambda already estimated
+Obtained lambda: 0.1
+
+using r=1.0
+using weight decay 0.0025
+PIM training...
+no_seen_N 80
+-4.5497941970825195
+Classes:                      (All) & (Old) & (New)
+PIM ACC (v1):                  79.1      84.3    68.6
+PIM ACC (ORCA metric):         78.6      84.3    68.6
+PIM ACC (Official GCD metric): 78.6      84.3    67.1
+0.99955
+Dataset: imagenet_100
+Loading feature map dataset...
+Loaded.
+
+K strategy: ground_truth_K
+Assumed K: 100
+
+PIM init prototypes already generated
+
+lambda already estimated
+Obtained lambda: 0.1
+
+using r=1.0
+using weight decay 0.0005
+PIM training...
+no_seen_N 50
+-4.588283061981201
+Classes:                      (All) & (Old) & (New)
+PIM ACC (v1):                  83.8      94.5    78.4
+PIM ACC (ORCA metric):         83.5      94.5    78.4
+PIM ACC (Official GCD metric): 83.5      93.5    78.4
+0.9997489014438167
